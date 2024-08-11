@@ -49,7 +49,7 @@ steps_per_episode = 100
 
 for e in range(total_episodes):
     state = env.reset()
-    print("State shape before reshaping:", state.shape)
+    print("Training...")
     state = np.reshape(state, [1, state_size]) 
     episode_start_time = time.time()
     for time_step in range(steps_per_episode):
